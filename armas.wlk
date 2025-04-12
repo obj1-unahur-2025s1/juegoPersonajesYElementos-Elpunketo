@@ -3,10 +3,7 @@ import jugadoresPersonajes.*
 object ballesta {
     method potencia() {return 4}
     var usada = false
-    var carga = self.estaCargada()
     var flechas = 10
-    method carga(siEstaCargada) {carga = siEstaCargada}
-    method carga() {return carga}
     method flechas(cantidadFlechas) {flechas = cantidadFlechas}
     method flechas() {return flechas}
     method usada(siFueUsada) {usada = siFueUsada}
@@ -24,10 +21,7 @@ object ballesta {
 object jabalina {
     method potencia() {return 30}
     var usada = false
-    var carga = self.estaCargada()
     var municion = 1
-    method carga(siEstaCargada) {carga = siEstaCargada}
-    method carga() {return carga}
     method municion(cantidadMunicion) {municion = cantidadMunicion}
     method municion() {return municion}
     method usada(siFueUsada) {usada = siFueUsada}

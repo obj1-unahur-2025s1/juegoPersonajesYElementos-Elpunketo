@@ -14,7 +14,7 @@ object floki {
             arma.usar()
         }
         else{
-            return("El arma no esta cargada")
+            null
         }
 
     }
@@ -25,7 +25,7 @@ object mario {
     method valorRecolectado(unValor) {valorRecolectado = unValor}
     method valorRecolectado() {return valorRecolectado}
     method encontrar(elemento){
-        valorRecolectado = self.valorRecolectado() + elemento.otorgarValor()
+        valorRecolectado = valorRecolectado + elemento.valorAOtorgar()
         elemento.recibirTrabajo()
     }
 
